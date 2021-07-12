@@ -1,0 +1,155 @@
+@use "colors.module";
+
+.textBoxColumn {
+  flex-direction: column;
+  align-items: center;
+}
+
+.directionRow {
+  flex-direction: row;
+}
+
+.directionRowReverse {
+  flex-direction: row-reverse;
+}
+
+.textBox {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+
+  .imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .columnBoxImage {
+      max-width: 500px;
+      max-height: 350px;
+      width: auto;
+      height: auto;
+    }
+
+    img {
+      max-height: 550px;
+      width: auto;
+      padding: 30px;
+      border-radius: 60px;
+    }
+  }
+
+  h1 {
+    color: colors.$clr-cream;
+    font-size: 110px;
+    font-weight: normal;
+    width: fit-content;
+  }
+
+
+  .m {
+    background-color: rgba(colors.$clr-blue, 70%);
+    border-radius: 30px;
+    padding: 20px 50px 25px;
+    font-size: 80px;
+  }
+
+  .textWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+  }
+}
+
+@media (max-width: 1500px) {
+  .textBox {
+    h1 {
+      font-size: 80px !important;
+    }
+
+    .m {
+      font-size: 65px !important;
+      padding: 15px 40px 20px;
+      border-radius: 25px;
+    }
+
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .textBox {
+
+    h1 {
+      font-size: 50px !important;
+    }
+
+    .m {
+      font-size: 40px !important;
+      padding: 10px 30px 15px;
+      border-radius: 15px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .textBox {
+    flex-direction: column;
+
+    .imageWrapper {
+      img, .columnBoxImage {
+        object-fit: cover;
+        width: 450px;
+        height: 450px;
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 600px) {
+  .textBox {
+    .imageWrapper {
+      img {
+        width: 350px;
+        height: 350px;
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 25%;
+      }
+
+      .columnBoxImage {
+        width: 350px;
+        height: 350px;
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 500px) {
+  .textBox {
+    .imageWrapper {
+      .textWrapper {
+        h1 {
+          font-size: 44px !important;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 400px) {
+  .textBox {
+    .imageWrapper {
+      img, .columnBoxImage {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}

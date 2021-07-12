@@ -1,0 +1,22 @@
+.carouselGallery {
+  height: 100%;
+  width: -webkit-fill-available;
+
+  .thumbs {
+    text-align: center;
+    padding: 0;
+  }
+
+  .carouselGallerySlide {
+    //height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carouselImage {
+      //width: auto;
+      //max-height: 450px;
+      border-radius: 35px;
+    }
+  }
+}

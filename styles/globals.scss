@@ -1,0 +1,58 @@
+@use "colors.module";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 3000px;
+  background: rgb(69, 125, 128);
+  background: linear-gradient(0deg, rgba(69, 125, 128, 1) 29%, rgba(90, 159, 159, 1) 57%) no-repeat;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+p {
+  color: colors.$clr-cream;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+
+@media (max-width: 1500px) {
+  p {
+    font-size: 24px !important;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  p {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  p {
+    font-size: 16px !important;
+  }
+}

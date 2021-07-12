@@ -1,0 +1,6 @@
+@use "colors.module";
+
+:export {
+  clrCream: colors.$clr-cream;
+  clrOrange: colors.$clr-orange;
+}

@@ -1,0 +1,102 @@
+@use "colors.module";
+
+
+.MuiFormLabel-root {
+  color: colors.$clr-cream !important;
+}
+
+.MuiInputBase-input {
+  color: colors.$clr-orange !important;
+}
+
+.MuiInput-underline:before {
+  border-bottom-color: colors.$clr-cream !important;
+}
+
+.MuiInput-underline:after {
+  border-bottom-color: colors.$clr-cream !important;
+}
+
+.contactUsWrapper {
+  margin: 50px 0;
+  display: flex;
+
+  .contactUsCard {
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    align-items: center;
+    border-radius: 25px;
+    background-color: colors.$clr-lightblue;
+    margin: 0 40px 50px;
+
+    p {
+      margin: 25px 0;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 33px;
+      color: colors.$clr-cream;
+    }
+
+    button {
+      background-color: transparent;
+      color: colors.$clr-cream;
+      border: 2px solid colors.$clr-cream;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: colors.$clr-blue;
+      }
+    }
+  }
+
+  form {
+
+    .textField {
+      margin: 10px;
+    }
+  }
+
+  .contactUsLocation {
+    img {
+      width: 85%;
+      height: 160px;
+      margin-top: 20px;
+      border: 2px solid colors.$clr-cream;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .contactUsWrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactUsWrapper {
+    .contactUsCard {
+      margin-right: 0;
+      margin-left: 0;
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .contactUsWrapper {
+    .contactUsCard {
+      margin-right: 0;
+      margin-left: 0;
+      width: 220px;
+    }
+  }
+}
