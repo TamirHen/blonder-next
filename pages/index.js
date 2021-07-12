@@ -14,9 +14,27 @@ import config from '../config.json';
 import CarouselGallery from "../components/CarouselGallery";
 import ContactUs from "../components/ContactUs";
 
+// Images:
+import hagiImage from '/images/hagi-pic.png';
+import theShopImage from '/images/workshop.jpg';
+import designingImage from '/images/desinging.jpg';
+import producingImage from '/images/producing.jpg';
+import repairingImage from '/images/repair.jpg';
+import teachingImage from '/images/teaching.jpg';
+import gridImage1 from '/images/repair.jpg';
+import gridImage2 from '/images/repair.jpg';
+import gridImage3 from '/images/repair.jpg';
+import gridImage4 from '/images/repair.jpg';
+import gridImage5 from '/images/repair.jpg';
+import locationPhoto from '/images/locationPhoto.png';
+
+
 export default function Home() {
     const {aboutUs, services, gallery, contactUs} = config;
     const refs = useRef([]);
+    const aboutUsImages = [hagiImage, theShopImage];
+    const servicesImages = [designingImage, producingImage, repairingImage, teachingImage];
+    const galleryImages = [gridImage1, gridImage2, gridImage3, gridImage4, gridImage5];
 
     useEffect(() => {
         Aos.init({duration: 1700, once: true});
@@ -27,11 +45,13 @@ export default function Home() {
         let textBoxes = [];
         const boxes = services.boxes;
         for (let i = 0; i < boxes.length; i++) {
-            const {header, body, image, direction} = boxes[i];
+            const {header, body, direction} = boxes[i];
+            const image = servicesImages[i];
             let aos = `fade-${i % 2 === 0 ? 'right' : 'left'}`;
 
             if (i === 2 && boxes.length > 3) {
-                let {header, body, image, direction} = boxes[i];
+                let {header, body, direction} = boxes[i];
+                let image = servicesImages[i];
                 const firstBox = <TextBox key={'services-textbox-' + i} header={header} body={body} img={image}
                                           aos={aos}
                                           direction={direction ? direction : i % 2 === 0 ? 'left' : 'right'}
@@ -40,7 +60,7 @@ export default function Home() {
                 aos = `fade-${i % 2 === 0 ? 'right' : 'left'}`;
                 header = boxes[i].header
                 body = boxes[i].body
-                image = boxes[i].image
+                image = servicesImages[i];
                 direction = boxes[i].direction
                 const secondBox = <TextBox key={'services-textbox-' + i} header={header} body={body} img={image}
                                            aos={aos}
@@ -86,10 +106,10 @@ export default function Home() {
                     </section>
                     <section ref={sec => refs.current[1] = sec} className={styles.sectionAboutUs}>
                         {aboutUs?.map((textBox, index) => {
-                            const {header, body, image, direction} = textBox;
+                            const {header, body, direction} = textBox;
                             return <TextBox key={'aboutus-textbox-' + index}
                                             aos={`fade-${index % 2 === 0 ? 'right' : 'left'}`} header={header}
-                                            body={body} img={image}
+                                            body={body} img={aboutUsImages[index]}
                                             direction={direction ? direction : index % 2 === 0 ? 'right' : 'left'}/>;
                         })}
                     </section>
@@ -98,11 +118,11 @@ export default function Home() {
                         {renderServices()}
                     </section>
                     <section ref={sec => refs.current[3] = sec} className={styles.sectionGallery} data-aos="fade-down">
-                        <CarouselGallery images={gallery}/>
+                        <CarouselGallery images={galleryImages}/>
                     </section>
                     <section ref={sec => refs.current[4] = sec} className={styles.sectionContactUs}>
                         <h1 data-aos="fade-down">{contactUs.header}</h1>
-                        <ContactUs/>
+                        <ContactUs locationPhoto={locationPhoto}/>
                     </section>
                 </main>
             </>

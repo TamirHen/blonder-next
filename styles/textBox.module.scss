@@ -16,26 +16,33 @@
 .textBox {
   display: flex;
   width: 100%;
-  margin: 20px 0;
+  margin: 30px 0;
+
+  .boxColumn {
+    max-width: 500px !important;
+    max-height: 350px !important;
+    margin-top: 30px;
+  }
 
   .imageWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
 
     .columnBoxImage {
-      max-width: 500px;
-      max-height: 350px;
-      width: auto;
-      height: auto;
+      max-width: 500px !important;
+      max-height: 350px !important;
+      width: auto !important;
+      height: auto !important;
+      min-height: unset !important;
+      min-width: unset !important;
     }
 
     img {
       max-height: 550px;
       width: auto;
       padding: 30px;
-      border-radius: 60px;
+      border-radius: 30px;
     }
   }
 
@@ -58,7 +65,7 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
-
+    width: 85%;
   }
 }
 
@@ -99,9 +106,9 @@
 
     .imageWrapper {
       img, .columnBoxImage {
-        object-fit: cover;
-        width: 450px;
-        height: 450px;
+        object-fit: cover !important;
+        width: 450px !important;
+        height: 450px !important;
       }
 
     }
@@ -117,12 +124,11 @@
         height: 350px;
         padding-right: 0;
         padding-left: 0;
-        border-radius: 25%;
       }
 
       .columnBoxImage {
-        width: 350px;
-        height: 350px;
+        width: 350px !important;
+        height: 350px !important;
       }
     }
 
@@ -147,8 +153,8 @@
   .textBox {
     .imageWrapper {
       img, .columnBoxImage {
-        width: 300px;
-        height: 300px;
+        width: 300px !important;
+        height: 300px !important;
       }
     }
   }

@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import styles from "../styles/contactUs.module.scss";
 import {Button, TextField} from "@material-ui/core";
 import config from '../config.json';
+import Image from "next/image";
 
-const ContactUs = () => {
-    const {locationPhoto, address} = config.contactUs;
+const ContactUs = ({locationPhoto}) => {
+    const {address} = config.contactUs;
     const [form, setForm] = useState();
     const onFormChangeHandler = (e) => {
         setForm({
@@ -65,7 +66,9 @@ const ContactUs = () => {
             </form>
             <div className={`${styles.contactUsLocation} ${styles.contactUsCard}`} data-aos="fade-left">
                 <h2>Our Location</h2>
-                <img src={locationPhoto} alt={address}/>
+                <div className={styles.locationPhotoWrapper}>
+                    <Image src={locationPhoto} alt={address}/>
+                </div>
                 <p>{address}</p>
                 <Button variant="contained" type='submit'>
                     Get Directions

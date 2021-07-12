@@ -2,6 +2,7 @@ import React from 'react';
 import {Carousel} from "react-responsive-carousel";
 import styles from "../styles/carouselGallery.module.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Image from "next/image";
 
 const CarouselGallery = ({images}) => {
         return (
@@ -22,9 +23,9 @@ const CarouselGallery = ({images}) => {
                     {
                         images.map((image, index) =>
                             <div key={`cs-${index}`} className={styles.carouselGallerySlide}>
-                                <img src={image.src}
+                                <Image src={image}
                                      className={styles.carouselImage}
-                                     alt={image.alt}/>
+                                     alt={"image-"+(index+1)}/>
                             </div>
                         )
                     }
