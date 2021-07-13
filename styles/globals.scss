@@ -11,6 +11,10 @@ body {
   background: linear-gradient(0deg, rgba(69, 125, 128, 1) 29%, rgba(90, 159, 159, 1) 57%) no-repeat;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
