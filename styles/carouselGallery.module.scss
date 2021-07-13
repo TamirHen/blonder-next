@@ -22,3 +22,11 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .carouselGallery {
+    .carouselGallerySlide {
+      padding: 6%;
+    }
+  }
+}

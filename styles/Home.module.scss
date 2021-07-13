@@ -64,7 +64,7 @@
   .sectionGallery {
     width: -webkit-fill-available;
     max-width: 800px;
-    padding: 80px 20px 0;
+    padding: 50px 20px 0;
   }
 
 }
@@ -103,22 +103,25 @@
   }
 }
 
-@media (max-width: 1000px) {
-
-}
-
 @media (max-width: 800px) {
 
-  .sectionServices {
-    h1 {
-      font-size: 60px !important;
+  .main {
+
+    .sectionServices {
+      h1 {
+        font-size: 60px !important;
+      }
     }
-  }
 
-  .sectionContactUs {
+    .sectionContactUs {
 
-    h1 {
-      font-size: 60px !important;
+      h1 {
+        font-size: 60px !important;
+      }
+    }
+
+    .sectionGallery {
+      padding-top: 30px;
     }
   }
 }
