@@ -15,7 +15,7 @@ import CarouselGallery from "../components/CarouselGallery";
 import ContactUs from "../components/ContactUs";
 
 // Images:
-import hagiImage from '/images/hagi-pic.png';
+import hagiImage from '/images/hagi-pic.jpg';
 import theShopImage from '/images/workshop.jpg';
 import designingImage from '/images/desinging.jpg';
 import producingImage from '/images/producing.jpg';
