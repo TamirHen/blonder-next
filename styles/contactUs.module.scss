@@ -60,15 +60,23 @@
     .textField {
       margin: 10px;
     }
+
+    .successMessage, .error {
+      font-size: 14px;
+      color: colors.$clr-cream;
+      margin-top: 20px;
+      font-weight: bold;
+    }
   }
 
   .contactUsLocation {
     h2 {
       margin-bottom: 20px;
     }
+
     img {
       width: 80%;
-      height: 160px;
+      height: 180px;
       border: 2px solid colors.$clr-cream;
       border-radius: 15px;
       object-fit: cover;
