@@ -71,6 +71,18 @@
   }
 }
 
+.navClose {
+  visibility: hidden;
+  max-height: 0;
+
+}
+
+.navOpen {
+  max-height: 1000px;
+  visibility: visible;
+}
+
+
 @media (max-width: 1500px) {
   .nav {
     button {
@@ -123,17 +135,6 @@
     display: block;
     position: fixed;
     background-color: colors.$clr-blue;
-  }
-
-  .navClose {
-    visibility: hidden;
-    max-height: 0;
-
-  }
-
-  .navOpen {
-    max-height: 1000px;
-    visibility: visible;
   }
 }
 
