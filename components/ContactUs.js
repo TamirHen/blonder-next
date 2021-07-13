@@ -39,7 +39,6 @@ const ContactUs = ({locationPhoto}) => {
                     body,
                     sendTo: "tamir@palladomsolutions.com"
                 },
-                {withCredentials: true}
             );
             setForm({
                 name: "",
