@@ -105,24 +105,21 @@
 
 @media (max-width: 800px) {
 
-  .main {
-
-    .sectionServices {
-      h1 {
-        font-size: 60px !important;
-      }
+  .sectionServices {
+    h1 {
+      font-size: 60px !important;
     }
+  }
 
-    .sectionContactUs {
+  .sectionContactUs {
 
-      h1 {
-        font-size: 60px !important;
-      }
+    h1 {
+      font-size: 60px !important;
     }
+  }
 
-    .sectionGallery {
-      padding-top: 30px;
-    }
+  .sectionGallery {
+    padding-top: 30px;
   }
 }
 
