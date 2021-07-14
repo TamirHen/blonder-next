@@ -69,6 +69,24 @@
 
 }
 
+.poweredByWrapper {
+  position: relative;
+  text-align: right;
+  color: black;
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .poweredBy {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 1200px) {
   .logo {
     margin-bottom: 0 !important;

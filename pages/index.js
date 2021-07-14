@@ -27,6 +27,7 @@ import gridImage3 from '/images/repair.jpg';
 import gridImage4 from '/images/repair.jpg';
 import gridImage5 from '/images/repair.jpg';
 import locationPhoto from '/images/locationPhoto.png';
+import {Link} from "@material-ui/core";
 
 
 export default function Home() {
@@ -126,6 +127,9 @@ export default function Home() {
                     </section>
                 </main>
             </>
+            <div className={styles.poweredByWrapper}>
+                <span className={styles.poweredBy}>Powered by <Link href="https://www.palladomsolutions.com/">Palladom Solutions</Link></span>
+            </div>
         </>
     )
 }
