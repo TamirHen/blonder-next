@@ -1,0 +1,28 @@
+@use "colors.module";
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: colors.$clr-cream;
+  position: relative;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  .poweredByWrapper {
+    position: absolute;
+    text-align: right;
+    color: black;
+    bottom: 5px;
+    right: 10px;
+
+
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+
+    .poweredBy {
+      font-size: 12px;
+    }
+  }
+}

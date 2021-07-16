@@ -37,7 +37,7 @@
     overflow: hidden;
 
     h1 {
-      color: colors.$clr-orange;
+      color: colors.$clr-black;
       font-size: 110px;
       font-weight: normal;
     }
@@ -67,24 +67,6 @@
     padding: 50px 20px 0;
   }
 
-}
-
-.poweredByWrapper {
-  position: relative;
-  text-align: right;
-  color: black;
-
-  a {
-    color: black;
-    text-decoration: underline;
-  }
-
-  .poweredBy {
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
-    font-size: 12px;
-  }
 }
 
 @media (max-width: 1200px) {

@@ -2,19 +2,19 @@
 
 
 .MuiFormLabel-root {
-  color: colors.$clr-cream !important;
+  color: colors.$clr-black !important;
 }
 
 .MuiInputBase-input {
-  color: colors.$clr-orange !important;
+  color: colors.$clr-black !important;
 }
 
 .MuiInput-underline:before {
-  border-bottom-color: colors.$clr-cream !important;
+  border-bottom-color: colors.$clr-black !important;
 }
 
 .MuiInput-underline:after {
-  border-bottom-color: colors.$clr-cream !important;
+  border-bottom-color: colors.$clr-black !important;
 }
 
 .contactUsWrapper {
@@ -22,14 +22,14 @@
   display: flex;
 
   .contactUsCard {
-    width: 300px;
+    width: 320px;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     display: flex;
     flex-direction: column;
     padding: 40px 30px;
     align-items: center;
     border-radius: 25px;
-    background-color: colors.$clr-lightblue;
+    background-color: colors.$clr-cream;
     margin: 0 40px 50px;
 
     p {
@@ -40,13 +40,13 @@
 
     h2 {
       font-size: 33px;
-      color: colors.$clr-cream;
+      color: colors.$clr-black;
     }
 
     button {
       background-color: transparent;
-      color: colors.$clr-cream;
-      border: 2px solid colors.$clr-cream;
+      color: colors.$clr-black;
+      border: 2px solid colors.$clr-black;
       margin-top: 20px;
 
       &:hover {
@@ -63,7 +63,7 @@
 
     .successMessage, .error {
       font-size: 14px;
-      color: colors.$clr-cream;
+      color: colors.$clr-black;
       margin-top: 20px;
       font-weight: bold;
     }
@@ -77,7 +77,7 @@
     img {
       width: 80%;
       height: 180px;
-      border: 2px solid colors.$clr-cream;
+      border: 2px solid colors.$clr-black;
       border-radius: 15px;
       object-fit: cover;
     }

@@ -47,7 +47,7 @@
   }
 
   h1 {
-    color: colors.$clr-cream;
+    color: colors.$clr-black;
     font-size: 110px;
     font-weight: normal;
     width: fit-content;
@@ -55,7 +55,8 @@
 
 
   .m {
-    background-color: rgba(colors.$clr-blue, 70%);
+    background-color: rgba(colors.$clr-black, 54%);
+    color: colors.$clr-cream;
     border-radius: 30px;
     padding: 20px 50px 25px;
     font-size: 80px;

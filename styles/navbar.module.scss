@@ -4,7 +4,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  border: 2px solid colors.$clr-cream;
+  border: 2px solid colors.$clr-black;
   border-radius: 10px;
   margin: 30px;
   z-index: 10;
@@ -13,7 +13,7 @@
 }
 
 .hamburgerNavOpen {
-  border-color: colors.$clr-orange;
+  border-color: colors.$clr-black;
 }
 
 .nav {
@@ -30,13 +30,13 @@
   button {
     font-weight: 400;
     font-size: 42px;
-    color: colors.$clr-cream;
+    color: colors.$clr-black;
     margin: 0 30px;
     transition: all 200ms ease;
 
     &:hover {
       transform: scale(1.05);
-      color: colors.$clr-orange;
+      color: colors.$clr-cream;
     }
 
     &:last-of-type {
@@ -117,7 +117,11 @@
 
     button {
       margin: 10px 0;
-      color: colors.$clr-orange;
+      color: colors.$clr-black;
+
+      &:hover {
+        color: colors.$clr-black;
+      }
     }
 
     .socialIconsWrapper {
@@ -128,7 +132,7 @@
   .hamburgerWrapper {
     display: block;
     position: fixed;
-    background-color: colors.$clr-blue;
+    background-color: colors.$clr-cream;
   }
 
   .navOpen {
